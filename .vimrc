@@ -32,5 +32,9 @@ set nowb
 set lbr
 set tw=500
 set ai "Auto indent
-set si "Smart indet
+set si "Smart indent
 set wrap "Wrap lines
+
+syntax on
+
+autocmd BufRead,BufNewFile *.ini,*.ini.append.php set syntax=dosini
