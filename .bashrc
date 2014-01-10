@@ -19,15 +19,6 @@ fi
 
 # User specific aliases and functions
 
-alias cdmp='cd ~/ez/matpratny/extension/minmatprat/'
-alias cdhp='cd ~/ez/haraldsplass/extension/haraldsplass/'
-alias cdnl='cd ~/ez/nabolag/extension/nabolag/'
-alias cdnhst='cd ~/ez/nhst/extension/nhst/'
-alias cdd='cd ~/ez/demo/extension/demo/'
-
-alias ezcc='php bin/php/ezcache.php --clear-all --purge'
-alias ezgal='php bin/php/ezpgenerateautoloads.php -e'
-
 alias cd..='cd ..'
 alias ..='cd ..'
 
