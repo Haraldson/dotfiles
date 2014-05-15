@@ -4,6 +4,7 @@
     ci = commit --no-verify
     out = push
     in = pull --rebase --summary
+    unadd = reset HEAD
     type = cat-file -t
     dump = cat-file -p
     hi = log --pretty=format:'%h | %ad | %s%d [%an]' --date=short
