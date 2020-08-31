@@ -2,8 +2,8 @@
     st = status
     br = branch
     ci = commit --no-verify
-    out = push
-    in = pull --rebase --summary
+    out = push --tags
+    in = pull --rebase# --summary
     unadd = reset HEAD
     type = cat-file -t
     dump = cat-file -p
@@ -11,6 +11,8 @@
     hime = log --pretty=format:'%h | %ad | %s' --date=short --author=hein
     hime7 = log --pretty=format:'%h | %ad | %s' --date=short --author=hein --since='7 days ago'
     praise = blame
+    ra = rm `git status | grep deleted | awk '{print $3}'`
+    append = commit --amend --no-edit
 
 [core]
     excludesfile = ~/.gitignore
@@ -38,9 +40,12 @@
 
 [user]
     name = Hein Haraldson Berg
-    email = # email
+    email = hein@hu.ma
 
 [push]
+    default = current
+
+[pull]
     default = current
 
 [merge]
